@@ -219,7 +219,8 @@ img {
 /* Modal */
 
 .backdrop {
-    position: absolute;
+    position: fixed;
+    z-index: 10;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -365,6 +366,7 @@ img {
     bottom: 0;
     width: 100%;
     height: 70px;
+    font-weight: 700;
     font-size: 14px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
@@ -436,7 +438,8 @@ img {
         background-color var(--transition-function);
 }
 
-.socials-link:hover {
+.socials-link:hover,
+.socials-link:focus {
     color: var(--contrast-color);
     background-color: var(--accent);
 }
@@ -474,7 +477,8 @@ img {
         border-color var(--transition-function);
 }
 
-.clients-link:hover {
+.clients-link:hover,
+.clients-link:focus {
     color: var(--accent);
     border-color: var(--accent);
 }
@@ -608,7 +612,8 @@ footer .logo {
     transition: box-shadow var(--transition-function);
 }
 
-.projects .link:hover {
+.projects .link:hover,
+.projects .link:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
         1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -629,7 +634,8 @@ footer .logo {
     transition: transform var(--transition-function);
 }
 
-.projects .link:hover .projects-description-thumb {
+.projects .link:hover .projects-description-thumb,
+.projects .link:focus .projects-description-thumb {
     transform: translateY(-100%);
 }
 
