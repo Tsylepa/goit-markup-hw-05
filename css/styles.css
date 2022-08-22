@@ -551,7 +551,8 @@ footer .logo {
     transition: background-color var(--transition-function);
 }
 
-.subscribe .socials-link:hover {
+.subscribe .socials-link:hover,
+.subscribe .socials-link:focus {
     background-color: var(--accent);
 }
 
